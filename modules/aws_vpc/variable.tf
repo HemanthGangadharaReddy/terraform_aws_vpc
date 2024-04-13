@@ -30,11 +30,6 @@ variable "vpc_name" {
 
 }
 
-variable "igw_name" {
-  description = "The name of the internet gateway"
-  type = string
-  default = "my_igw"
-}
 variable "region" {
   description = "The region in which the VPC will be created"
   type = string

@@ -10,12 +10,3 @@ resource "aws_vpc" "my_vpc" {
     }
 }
 
-
-# Create a internet gateway resource in the above VPC
-resource "aws_internet_gateway" "my_igw" {
-    vpc_id = aws_vpc.my_vpc.id
-
-    tags = {
-        Name = var.igw_name
-    }
-}

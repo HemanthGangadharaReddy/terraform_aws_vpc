@@ -2,10 +2,6 @@ variable "vpc_id" {
   description = "The ID of the VPC where the subnets will be created."
 }
 
-variable "destination_cidr" {
-  description = "The destination CIDR block for the route tables."
-}
-
 variable "subnet_cidr" {
   description = "CIDR block for the subnets."
   type        = list(string)

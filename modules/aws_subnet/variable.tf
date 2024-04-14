@@ -6,10 +6,6 @@ variable "destination_cidr" {
   description = "The destination CIDR block for the route tables."
 }
 
-variable "igw_id" {
-  description = "The ID of the internet gateway."
-}
-
 variable "subnet_cidr" {
   description = "CIDR block for the subnets."
   type        = list(string)

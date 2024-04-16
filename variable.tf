@@ -22,9 +22,3 @@ variable "subnet_name" {
   type        = list(string)
   default     = ["public_subnet_1", "public_subnet_2", "private_subnet_1", "private_subnet_2"]
 }
-
-variable "destination_cidr" {
-  description = "The destination CIDR block for the route tables."
-  type        = string
-  default     = "0.0.0.0/0" 
-}
